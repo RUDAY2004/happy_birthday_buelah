@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      
+      <link rel="stylesheet" href="indexstyle.css">
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday </title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab"rel="stylesheet"/> 
+   <link rel="shortcut icon" type="image/png" href="birthday.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+  
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  
+  </head>
+   <body>
+    <div id="container" style="display:none">
+      <div class="s-2"></div>
+      <div class="card">
+          <div class="sides left-side">
+              <h1 class="profession"> Happy</h3>
+              <h3 class="name">Hannah </h3>                
+          </div>                     
+          <div class="sides right-side">
+              <h1 class="profession"> Birthday</h3>
+              <h3 class="name">Buelah Percy</h3>            
+              </div>       
+          <div class="back-side">
+              <p class="biography">
+                Many more happy returns of the day, my kutty Cheers to another year of beautiful memories together! With you by my side, I am truly blessed. Thank you for being with me during my lowest times. Thank you for coming into my life and adding beautiful and colorful pages to it. You are my heart's greatest treasure, and I'll cherish you always, my bangaram. I will never leave your hand, at any cost and in any situation, my kutty. I'm truly sorry for not being there on your birthday, I promise you that I will stick around for the next one Happy birthday, my princess
+  
+  
+  
+              </p>
+          </div>
+          
+          <button class="button" onClick="window.open('wish.html');">
+            A Massage For You
+       </button>
+
+          <!-- <a href="wish.html">
+              <button onclick="wish.html" >A Massage For You</button>            
+          </a> -->
+      </div>
+      <div class="s-1"></div>
+      <div class="right-col">
+        <img src="play.png" id="icon">
+      </div>
+      </div>
+      <span id="count"></span>
+
+     <div class="lording" >
+      <div class="center">
+         <div class="ring"></div>
+         <span>loading...</span>
+      </div>
+    </div>
+<div id="home" class="home-style-2 slider-area" style="display:none">
+
+  <div class="particles-js" id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1366" height="606"></canvas></div>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <audio id="hbdmp" autoplay loop >
+      
+    <source src="hbd.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    var hbdmp = document.getElementById("hbdmp")
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function(){
+     if(hbdmp.paused){
+       hbdmp.play();
+       icon.src ="pause.png";
+     }else{
+       hbdmp.pause();
+       icon.src = "play.png";
+     }
+
+    }
+
+  </script>
+  <script>
+
+    setTimeout(function() {
+      $('.lording').hide()
+    }, 5000);
+    
+    setTimeout(function() {
+      $('#container').show()
+    }, 5199);
+    
+    
+    </script>
+    
+</body>
+</html>
